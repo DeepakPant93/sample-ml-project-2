@@ -4,7 +4,7 @@ from fastapi_health import health
 
 from sample_ml_project_2.routes.router import router
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 app = FastAPI(
     title="sample-ml-project-2 APIs",
