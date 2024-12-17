@@ -1,12 +1,11 @@
 name: Publish Package
 
 on:
-  release:
-      types: [published]
-      branches: [main]
-  repository_dispatch:
-      types: [package-release]
-
+    release:
+        types: [published]
+        branches: [main]
+    repository_dispatch:
+        types: [package-release]
 
 jobs:
     publish-to-pypi:

@@ -1,22 +1,22 @@
 version: "3.9"
 
 services:
-  sample_ml_project_2:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: sample_ml_project_2
-    ports:
-      - "80:80"
-    volumes:
-      - .:/app
-    environment:
-      - PYTHONUNBUFFERED=1
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:80/health" ]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 10s
-    command: >
-      sample_ml_project_2
+    sample_ml_project_2:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: sample_ml_project_2
+        ports:
+            - "80:80"
+        volumes:
+            - .:/app
+        environment:
+            - PYTHONUNBUFFERED=1
+        healthcheck:
+            test: ["CMD", "curl", "-f", "http://localhost:80/health"]
+            interval: 30s
+            timeout: 10s
+            retries: 3
+            start_period: 10s
+        command: >
+            sample_ml_project_2

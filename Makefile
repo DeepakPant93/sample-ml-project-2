@@ -29,13 +29,13 @@ help: ## Display this help message
 # Installation and Setup
 # =============================
 .PHONY: bake-env
-bake-env: ## Install the poetry environment and set up pre-commit hooks
+bake-env: clean-env ## Install the poetry environment and set up pre-commit hooks
 	@echo "🚀 Creating virtual environment using pyenv and poetry"
 	@poetry install
 	@poetry run pip install --upgrade dvc dvc-gdrive pydrive2 pyOpenSSL
 	@poetry run pre-commit install || true
 	@max_retries=3; count=0; \
-	while ! make check; do \
+	while ! make lint; do \
 		count=$$((count + 1)); \
 		if [ $$count -ge $$max_retries ]; then \
 			echo "Max retries reached. Exiting."; \

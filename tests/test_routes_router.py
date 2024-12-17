@@ -1,7 +1,9 @@
 from starlette.testclient import TestClient
+
 from sample_ml_project_2.main import app
 
 client = TestClient(app=app)
+
 
 def test_train_model():
     response = client.post("/api/v1/train-model")

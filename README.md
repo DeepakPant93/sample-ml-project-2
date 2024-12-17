@@ -2,8 +2,8 @@
 
 This is a template repository for Python projects that use Poetry for their dependency management.
 
-- **Github repository**: <https://github.com/DeepakPant93/sample-ml-project-2/>
-- **Documentation** <https://DeepakPant93.github.io/sample-ml-project-2/>
+-   **Github repository**: <https://github.com/DeepakPant93/sample-ml-project-2/>
+-   **Documentation** <https://DeepakPant93.github.io/sample-ml-project-2/>
 
 ## Getting started with your project
 
