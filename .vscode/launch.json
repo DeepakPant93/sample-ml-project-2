@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: sample_ml_project_2",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/sample_ml_project_2/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "jinja": true
+        }
+    ]
+}
